@@ -1,0 +1,9 @@
+def choose_function(choose):
+    if choose == "1":
+        print("OFDM called")
+        from ofdm_simulation import plot_data1
+    elif choose == "2":
+        print("Spread Spectrum called")
+        from spread_sprectrum_communications import plot_data2
+condition = input("请输入实现系统：")
+choose_function(condition)
